@@ -14,7 +14,8 @@ public class MyMath {
     }
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        String input1, input2 = null, message = "Give me a %snumber (Q to quit):";
+        String input1, input2 = null;
+        String message = "Give me a %snumber (Q to quit):";
         System.out.printf(String.format(message, ""));
         while (!(input1 = s.nextLine()).equals("Q")) {
             if (input2 == null) {
