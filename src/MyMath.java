@@ -14,10 +14,19 @@ public class MyMath {
     }
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.println("Give a positive number: ");
-        int a = Integer.parseInt(s.nextLine());
-        System.out.println("Give a positive number: ");
-        int b = Integer.parseInt(s.nextLine());
-        System.out.println(gCF(a,b));
+        String input1, input2 = null, message = "Give me a %snumber (Q to quit):";
+        System.out.printf(String.format(message, ""));
+        while (!(input1 = s.nextLine()).equals("Q")) {
+            if (input2 == null) {
+                input2 = input1;
+                System.out.printf(String.format(message, "second "));
+                continue;
+            }
+            System.out.printf("GCF of %s and %s is %d%n", input1, input2, gCF(Integer.parseInt(input1),Integer.parseInt(input2)));
+
+            System.out.printf(String.format(message, ""));
+            input2 = null;
+        }
+
     }
 }
