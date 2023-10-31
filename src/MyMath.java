@@ -3,6 +3,7 @@ import java.util.Scanner;
 /**
  * @author Olivia McKittrick
  * @date 10/31/23
+ *
  */
 public class MyMath {
     public static int gcf(int a, int b) { // the two numbers
