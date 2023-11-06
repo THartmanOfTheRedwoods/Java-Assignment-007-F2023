@@ -19,9 +19,9 @@ public class MyMath {
         int b = s.nextInt();
 
         while (b != 0) {
-            int gcf = a;
+            int c = a;
             a = b;
-            b = gcf % b;
+            b = c % b;
         }
 
         System.out.printf("The Greatest Common Factor is: %s", a);
