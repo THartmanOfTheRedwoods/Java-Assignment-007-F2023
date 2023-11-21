@@ -1,6 +1,12 @@
 import java.util.Scanner;
 
 public class MyMath {
+    /**
+     * A simple recreation of Euclid's GCF algorithm
+     * @param in1 First integer input
+     * @param in2 Second integer input
+     * @return The greatest common factor of in1 and in2
+     */
     public static int gcf(int in1, int in2){
         int in3;
         while(in2 != 0){
